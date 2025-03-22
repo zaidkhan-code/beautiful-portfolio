@@ -45,7 +45,7 @@ export default function Header() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "M-HUSSAIN-Resume.pdf";
+    link.download = "M-ISRAR-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -62,7 +62,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold">
-          M-HUSSAIN<span className="text-primary">.</span>
+          M-ISRAR<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop Navigation */}

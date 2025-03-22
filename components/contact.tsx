@@ -74,7 +74,7 @@ export default function Contact() {
                 </div>
                 <h3 className="text-lg font-bold mb-2">Email</h3>
                 <p className="text-muted-foreground">
-                  mohammadHUSSAIN2033@gmail.com
+                  mohammadISRAR2033@gmail.com
                 </p>
               </CardContent>
             </Card>

@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import image from "../public/images/93480616-7442-4701-aba2-c855a7919ab6.png";
+import image from "../public/images/WhatsApp_Image_2024-05-19_at_1.00.45_AM-removebg-preview.png";
 export default function About() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "M-HUSSAIN-Resume.pdf";
+    link.download = "M-ISRAR-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -35,7 +35,7 @@ export default function About() {
             <div className="relative h-full w-full overflow-hidden rounded-lg">
               <Image
                 src={image.src}
-                alt="M-HUSSAIN"
+                alt="M-ISRAR"
                 width={400}
                 height={400}
                 className="object-cover h-full w-full"
@@ -66,12 +66,12 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div>
                 <h4 className="font-bold">Name:</h4>
-                <p className="text-muted-foreground">M-HUSSAIN</p>
+                <p className="text-muted-foreground">M-ISRAR</p>
               </div>
               <div>
                 <h4 className="font-bold">Email:</h4>
                 <p className="text-muted-foreground">
-                  mohammadHUSSAIN2033@gmail.com
+                  mohammadISRAR2033@gmail.com
                 </p>
               </div>
               <div>

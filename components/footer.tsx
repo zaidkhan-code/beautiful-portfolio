@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="text-xl font-bold">
-              M-HUSSAIN<span className="text-primary">.</span>
+              M-ISRAR<span className="text-primary">.</span>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground max-w-md">
               A passionate React developer with 4 years of experience building
@@ -32,7 +32,7 @@ export default function Footer() {
               size="icon"
               className="rounded-full"
               as="a"
-              href="http://www.linkedin.com/in/muhammad-HUSSAIN-1b7269288"
+              href="http://www.linkedin.com/in/muhammad-ISRAR-1b7269288"
               target="_blank"
             >
               <Linkedin className="h-5 w-5" />
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} M-HUSSAIN. All rights reserved.
+            © {new Date().getFullYear()} M-ISRAR. All rights reserved.
           </p>
         </div>
       </div>

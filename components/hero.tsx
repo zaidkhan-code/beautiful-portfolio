@@ -15,7 +15,7 @@ export default function Hero() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "M-HUSSAIN-Resume.pdf";
+    link.download = "M-ISRAR-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -33,7 +33,7 @@ export default function Hero() {
           className="max-w-3xl mx-auto text-center"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span className="text-primary">M-HUSSAIN</span>
+            Hi, I'm <span className="text-primary">M-ISRAR</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-8">
             Mern Stack Developer | JavaScript | ReactJS | NextJS | TypeScript
@@ -80,7 +80,7 @@ export default function Hero() {
               size="icon"
               className="rounded-full"
               as="a"
-              href="http://www.linkedin.com/in/muhammad-HUSSAIN-1b7269288"
+              href="http://www.linkedin.com/in/muhammad-ISRAR-1b7269288"
               target="_blank"
             >
               <Linkedin className="h-5 w-5" />
