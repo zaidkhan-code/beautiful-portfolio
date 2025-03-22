@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { MapPin, Mail, Phone } from "lucide-react"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,22 +16,24 @@ export default function Contact() {
     email: "",
     subject: "",
     message: "",
-  })
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission logic here
-    console.log(formData)
+    console.log(formData);
     // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    setFormData({ name: "", email: "", subject: "", message: "" });
     // Show success message
-    alert("Message sent successfully!")
-  }
+    alert("Message sent successfully!");
+  };
 
   return (
     <section id="contact" className="py-20 bg-muted/30">
@@ -71,7 +73,9 @@ export default function Contact() {
                   <Mail className="text-primary h-6 w-6" />
                 </div>
                 <h3 className="text-lg font-bold mb-2">Email</h3>
-                <p className="text-muted-foreground">mohammadisrar2033@gmail.com</p>
+                <p className="text-muted-foreground">
+                  mohammadHUSSAIN2033@gmail.com
+                </p>
               </CardContent>
             </Card>
           </motion.div>
@@ -106,7 +110,13 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="grid gap-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Input name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
+                    <Input
+                      name="name"
+                      placeholder="Your Name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <Input
@@ -147,6 +157,5 @@ export default function Contact() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-
